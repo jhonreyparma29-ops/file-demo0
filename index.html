@@ -152,16 +152,21 @@
     </div>
 
     <script>
-        function showImage() {
-            document.getElementById("preview").innerHTML =
-                '<img src="https://drive.google.com/file/d/1gEunEL9_6lbt9AMu0FDkftrud0N0WYfw/view?usp=sharing">';
-        }
+    function showImage() {
+        document.getElementById("preview").innerHTML =
+            '<img src="https://drive.google.com/uc?export=view&id=1gEunEL9_6lbt9AMu0FDkftrud0N0WYfw">';
+    }
 
-        function showText() {
-            document.getElementById("preview").innerHTML =
-                '<iframe src="https://drive.google.com/file/d/14BwGjXRsigay4hS_PQdtInRQk7ASka1Z/view?usp=sharing" width="100%" height="250"></iframe>';
-        }
-    </script>
+    function showText() {
+        document.getElementById("preview").innerHTML =
+            '<iframe src="https://drive.google.com/uc?export=download&id=14BwGjXRsigay4hS_PQdtInRQk7ASka1Z" width="100%" height="300"></iframe>';
+    }
+
+    // AUTO LOAD IMAGE PAG OPEN NG PAGE
+    window.onload = function() {
+        showImage();
+    }
+</script>
 
 </body>
 </html>
